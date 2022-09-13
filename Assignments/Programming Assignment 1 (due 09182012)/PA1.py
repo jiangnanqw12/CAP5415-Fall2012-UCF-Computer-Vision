@@ -59,7 +59,7 @@ def convolution(img, k_type, k_size, sigma=None):
 
 
 def conv_test():
-	noise_img = cv2.imread("balloonGrayNoisy.jpg")
+	noise_img = cv2.imread("image\\balloonGrayNoisy.jpg")
 
 	avg_3_denoising = convolution(noise_img, "avg", 3)
 	avg_5_denoising = convolution(noise_img, "avg", 5)
@@ -144,7 +144,7 @@ def edge_detect(img, k_type, threshold):
 	return edge_img
 
 def edge_test():
-	img = cv2.imread("buildingGray.jpg", cv2.IMREAD_GRAYSCALE)
+	img = cv2.imread("image\\buildingGray.jpg", cv2.IMREAD_GRAYSCALE)
 
 	threshold = [10, 11, 12]
 	plt.figure(figsize=(6, 4.8))

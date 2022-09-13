@@ -107,7 +107,7 @@ def Marr_Hidreth_detect(img_path, threshold_p=0.4, sigma=4, size=31):
 
 
 def Marr_Hidreth_test():
-	img_path = "./img/lena.jpg"
+	img_path = "./image/lena.jpg"
 	"""
 		feel free to modify these three parameters.
 		 notice that the size should be an odd number.
