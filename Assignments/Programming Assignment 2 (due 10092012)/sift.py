@@ -153,7 +153,7 @@ def sift_test():
 
 def sift_openCV_test():
 	gray = cv2.imread("./img/lena.jpg", cv2.IMREAD_GRAYSCALE)
-	sift = cv2.xfeatures2d.SIFT_create()
+	sift = cv2.SIFT_create()
 	keypoints = sift.detect(gray)
 
 	kp_img = cv2.drawKeypoints(gray, keypoints, gray, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
